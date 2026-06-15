@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfumes Lover - Día del Padre</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f1f33;
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: #2b241d;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    img {
+      border: 0;
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: 600px;
+      max-width: 600px;
+      background-color: #f8f3ea;
+      margin: 0 auto;
+    }
+
+    .logo {
+      padding: 30px 20px 22px;
+      text-align: center;
+      background-color: #0f1f33;
+      color: #d6b36a;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .logo span {
+      display: block;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 5px;
+      margin-top: 4px;
+      color: #f8f3ea;
+      font-weight: 400;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f1f33 0%, #173452 55%, #4a321f 100%);
+      padding: 42px 34px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .eyebrow {
+      color: #d6b36a;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 44px;
+      line-height: 1.05;
+      color: #ffffff;
+      margin: 0 0 18px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 31px;
+      line-height: 1.15;
+      color: #0f1f33;
+      margin: 0 0 16px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 18px;
+    }
+
+    .discount {
+      display: inline-block;
+      background-color: #d6b36a;
+      color: #0f1f33;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 12px 0 18px;
+    }
+
+    .placeholder {
+      background-color: #e7dcc8;
+      border: 1px dashed #8b6a3f;
+      color: #6b4b2f;
+      text-align: center;
+      padding: 42px 20px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .section {
+      padding: 38px 34px;
+      text-align: center;
+      background-color: #f8f3ea;
+    }
+
+    .dark-section {
+      background-color: #172b43;
+      color: #ffffff;
+      padding: 36px 34px;
+      text-align: center;
+    }
+
+    .dark-section h2 {
+      color: #d6b36a;
+    }
+
+    .cards {
+      padding: 24px 26px 36px;
+      background-color: #f8f3ea;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-left: 5px solid #d6b36a;
+      margin-bottom: 14px;
+      padding: 18px;
+      text-align: left;
+      border-radius: 0 14px 14px 0;
+    }
+
+    .card-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: #0f1f33;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      font-size: 15px;
+      margin: 0;
+      color: #3b3128;
+    }
+
+    .cta {
+      display: inline-block;
+      background-color: #d6b36a;
+      color: #0f1f33 !important;
+      text-decoration: none;
+      padding: 16px 34px;
+      border-radius: 40px;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 16px;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #6b4b2f;
+      font-style: italic;
+      margin-top: 15px;
+    }
+
+    .footer {
+      background-color: #0f1f33;
+      color: #f8f3ea;
+      text-align: center;
+      padding: 28px 26px;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .footer a {
+      color: #d6b36a;
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: 620px) {
+      .container {
+        width: 100% !important;
+      }
+
+      .hero,
+      .section,
+      .dark-section {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+      }
+
+      h1 {
+        font-size: 36px !important;
+      }
+
+      h2 {
+        font-size: 27px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td align="center">
+
+        <table class="container" width="600" cellpadding="0" cellspacing="0" role="presentation">
+
+          <!-- LOGO TIPOGRÁFICO -->
+          <tr>
+            <td class="logo">
+              Perfumes Lover
+              <span>FRAGRANCES FOR HIM</span>
+            </td>
+          </tr>
+
+          <!-- HERO -->
+          <tr>
+            <td class="hero">
+              <div class="eyebrow">Día del Padre</div>
+
+              <h1>Treinta segundos.<br>Y el regalo resuelto.</h1>
+
+              <p style="color:#f8f3ea;">
+                Elige una fragancia con presencia, estilo y carácter.
+              </p>
+
+              <div class="discount">15% OFF en toda la web</div>
+
+              <p style="color:#f8f3ea; margin-bottom:0;">
+                Solo hasta el domingo a las 23:59.
+              </p>
+            </td>
+          </tr>
+
+       <tr>
+    <td>
+        <img src="assets/2.png"
+             alt="Perfumes Lover - Día del Padre"
+             width="600"
+             style="display:block;width:100%;max-width:600px;height:auto;border:0;">
+    </td>
+</tr>
+
+          <!-- MENSAJE PRINCIPAL -->
+          <tr>
+            <td class="section">
+              <h2>Compra antes del domingo y recíbelo a tiempo</h2>
+
+              <p>
+                Si compras antes del domingo, te garantizamos que llega a casa antes del
+                <strong>19 de marzo</strong>.
+              </p>
+
+              <p>
+                Entra hoy, elige el perfume ideal para tu papá y aprovecha el descuento activo en toda la web.
+              </p>
+
+              <a href="#" class="cta">Ver oferta Día del Padre →</a>
+
+              <p class="note">
+                Promoción válida hasta el domingo a las 23:59.
+              </p>
+            </td>
+          </tr>
+
+          <!-- BLOQUE OSCURO -->
+          <tr>
+            <td class="dark-section">
+              <h2>Un perfume para cada tipo de papá</h2>
+
+              <p style="color:#f8f3ea;">
+                Creamos una selección especial para que encuentres rápido el regalo perfecto.
+              </p>
+            </td>
+          </tr>
+
+          <!-- CARDS -->
+          <tr>
+            <td class="cards">
+
+              <div class="card">
+                <div class="card-title">🤵 Papá clásico</div>
+                <p>Siempre bien puesto, con elegancia de toda la vida.</p>
+              </div>
+
+              <div class="card">
+                <div class="card-title">✨ Papá elegante</div>
+                <p>Cuida su imagen, nota la diferencia y prefiere aromas sofisticados.</p>
+              </div>
+
+              <div class="card">
+                <div class="card-title">👟 Papá de diario</div>
+                <p>Cómodo, sencillo y sin complicaciones. Fragancias frescas para todos los días.</p>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🔥 Papá con carácter</div>
+                <p>Personalidad, presencia y aromas de los que se recuerdan.</p>
+              </div>
+
+            </td>
+          </tr>
+
+          <!-- ESPACIO IMÁGENES PRODUCTOS -->
+          <tr>
+            <td class="placeholder">
+              [ESPACIO PARA IMÁGENES DE PRODUCTOS]<br>
+              3 o 4 perfumes destacados / foto de producto sobre fondo neutro premium
+            </td>
+          </tr>
+
+          <!-- CTA FINAL -->
+          <tr>
+            <td class="section">
+              <h2>El Día del Padre no espera</h2>
+
+              <p>
+                El descuento ya está activo. Compra antes del domingo y asegura su regalo a tiempo.
+              </p>
+
+              <a href="#" class="cta">Ver oferta Día del Padre →</a>
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td class="footer">
+              Perfumes Lover<br>
+              Fragancias seleccionadas para regalar con estilo.<br><br>
+              <a href="#">Ver tienda</a> · <a href="#">Contacto</a> · <a href="#">Instagram</a>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
